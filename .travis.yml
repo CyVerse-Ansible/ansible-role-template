@@ -29,7 +29,7 @@ script:
   # 1. Syntax check
   - "sudo docker exec test_dummy ansible-playbook /etc/ansible/roles/role_under_test/tests/test.yml -i tests/inventory --syntax-check"
 
-  # 2. Run playbook to perform updates
+  # 2. Run playbook to execute role
   - "sudo docker exec test_dummy ansible-playbook /etc/ansible/roles/role_under_test/tests/test.yml -i tests/inventory --connection=local"
 
   # 3. HERE, WRITE SOME TESTS to verify that your role has produced the desired
