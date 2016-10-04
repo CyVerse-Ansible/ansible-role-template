@@ -41,7 +41,7 @@ Also, fill out meta/main.yml. What you enter here will be populated on Ansible G
 ### Publish
 
 #### Configure GitHub
-Create a new Git repo in [CyVerse-Ansible](https://github.com/cyverse-ansible). `git init` the role locally, commit, and push to GitHub.
+Create a new Git repo in [CyVerse-Ansible](https://github.com/cyverse-ansible). `git init` the role locally, commit, and push to GitHub. Don't forget to add the `.travis.yml` dotfile, which `git add *` doesn't include automatically.
 
 #### Configure Travis CI
 If you do not have one already, create a [Travis CI](https://travis-ci.org/) account and follow their instructions to link your GitHub account. Browse to your profile page and enable the new repository in Travis CI. View and copy your Travis Token from the same page, you'll need it in a minute.
