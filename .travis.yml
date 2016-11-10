@@ -51,7 +51,7 @@ script:
 
 
 notifications:
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  webhooks:
     urls:
       - https://galaxy.ansible.com/api/v1/notifications
     on_success: always
