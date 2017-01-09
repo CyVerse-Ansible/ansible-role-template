@@ -55,3 +55,7 @@ Go to "My Roles" and click the refresh button, your new role repository should a
 Any subsequent commits that you push to your GitHub repo should automatically trigger a build in Travis CI, and import the role into Galaxy when a build completes *with passing status*.
 
 If you want to run an import manually, browse to [my imports](https://galaxy.ansible.com/imports) on Galaxy. The import process has built-in YAML linting, and if there are any issues preventing a successful import then you will see an error message here.
+
+## References
+* http://www.jeffgeerling.com/blog/testing-ansible-roles-travis-ci-github
+  * This tutorial was a large influence on the structure and design of this template.
