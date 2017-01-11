@@ -23,7 +23,7 @@ Build the role functionality into the folder structure, or migrate an existing r
 Populate section 3 of .travis.yml with tests which confirm that your role produces the desired effect on a target system. This is not strictly necessary but is strongly encouraged.
 
 ### Write the docs
-Fill out role-readme.md, which will become readme.md.
+Fill out role-README.md, which will become README.md.
 
 Replace "Role Name" on line 1 with the name of your role, matching the name of your git repository but dropping the "ansible-" prefix, e.g. "purpose-of-role".
 
@@ -36,7 +36,7 @@ Also, fill out meta/main.yml. What you enter here will be populated on Ansible G
 ### Clean up
 - Delete any empty/unused boilerplate folders and YAML files.
 - Search the entire role for "role-template" and ensure you have changed its name everywhere.
-- Delete this file (readme.md) and rename role-readme.md to readme.md.
+- Delete this file (readme.md) and rename role-README.md to README.md. (Ansible Galaxy requires the filename to be uppercase.)
 
 ### Publish
 
@@ -44,7 +44,7 @@ Also, fill out meta/main.yml. What you enter here will be populated on Ansible G
 Create a new Git repo in [CyVerse-Ansible](https://github.com/cyverse-ansible). `git init` the role locally, commit, and push to GitHub. Don't forget to add the `.travis.yml` dotfile, which `git add *` doesn't include automatically.
 
 #### Configure Travis CI
-If you do not have one already, create a [Travis CI](https://travis-ci.org/) account and follow their instructions to link your GitHub account. Browse to your profile page and enable the new repository in Travis CI. View and copy your Travis Token from the same page, you'll need it in a minute.
+If you do not have one already, create a [Travis CI](https://travis-ci.org/) account and follow their instructions to link your GitHub account. Browse to your profile page, click the "sync" button, and enable the new repository in Travis CI. View and copy your Travis Token from the same page, you'll need it in a minute.
 
 #### Configure Galaxy
 If you do not have one already, create an [Ansible Galaxy](https://galaxy.ansible.com/) account linked to your GitHub account.
