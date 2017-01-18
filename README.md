@@ -44,12 +44,12 @@ Also, fill out meta/main.yml. What you enter here will be populated on Ansible G
 Create a new Git repo in [CyVerse-Ansible](https://github.com/cyverse-ansible). `git init` the role locally, commit, and push to GitHub. Don't forget to add the `.travis.yml` dotfile, which `git add *` doesn't include automatically.
 
 #### Configure Travis CI
-If you do not have one already, create a [Travis CI](https://travis-ci.org/) account and follow their instructions to link your GitHub account. Browse to your profile page, click the "sync" button, and enable the new repository in Travis CI. View and copy your Travis Token from the same page, you'll need it in a minute.
+If you do not have one already, create a [Travis CI](https://travis-ci.org/) account and follow their instructions to link your GitHub account. Browse to your profile page, click the "sync" button, and enable the new repository in Travis CI.
 
 #### Configure Galaxy
 If you do not have one already, create an [Ansible Galaxy](https://galaxy.ansible.com/) account linked to your GitHub account.
 
-Go to "My Roles" and click the refresh button, your new role repository should appear. Turn on the switch, click the gear, and enter your Travis Token.
+Go to "My Roles" and click the refresh button, your new role repository should appear. Turn on the switch.
 
 #### Trigger a build + import
 Any subsequent commits that you push to your GitHub repo should automatically trigger a build in Travis CI, and import the role into Galaxy when a build completes *with passing status*.
