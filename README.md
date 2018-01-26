@@ -51,6 +51,9 @@ If you do not have one already, create an [Ansible Galaxy](https://galaxy.ansibl
 
 Go to "My Roles" and click the refresh button, your new role repository should appear. Turn on the switch.
 
+#### Version your role
+Consumers of this role will want to pin their dependency on this role to a specific version. `ansible-galaxy` uses git tags to allow users to specify a version. See http://docs.ansible.com/ansible/latest/galaxy.html#installing-multiple-roles-from-a-file. Please use the [SemVer](https://semver.org) protocol.
+
 #### Trigger a build + import
 Any subsequent commits that you push to your GitHub repo should automatically trigger a build in Travis CI, and import the role into Galaxy when a build completes *with passing status*.
 
