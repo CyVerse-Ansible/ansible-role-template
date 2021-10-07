@@ -62,3 +62,6 @@ If you want to run an import manually, browse to [my imports](https://galaxy.ans
 ## References
 * http://www.jeffgeerling.com/blog/testing-ansible-roles-travis-ci-github
   * This tutorial was a large influence on the structure and design of this template.
+
+For more information you can see offical documentation of ansible roles
+ https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
